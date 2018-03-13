@@ -26,7 +26,7 @@ class Login extends Component {
   loginWithUser(e) {
     e.preventDefault();
     const user = {username: this.state.username, password: this.state.password};
-    axios.post('http://localhost:3030/login', user)
+    axios.post('https://instapic-server-rashmi.herokuapp.com/login', user)
       .then((data) => {
         localStorage.setItem('localStorage-username', this.state.username);
         this.setState({isError: false});
