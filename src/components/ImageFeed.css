@@ -1,0 +1,79 @@
+.ImageFeed {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Welcome-header {
+  font: 15px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #4691A4;
+}
+
+.Welcome-text {
+  font-weight: bold;
+  color: #4691A4;
+  float: left;
+  margin: 5px 0px 5px 0px;
+}
+
+.Welcome-text-username a:link,
+.Welcome-text-username a:visited,
+.Welcome-text-username a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.Welcome-text-username a:hover {
+  text-decoration: underline;
+}
+
+.Welcome-header-newpost-link,
+.Welcome-header-home-link,
+.Welcome-header-login-link,
+.Welcome-header-logout-link {
+  background: #4B99AD;
+  color: white;
+  /* Following helps make the div have same width as its contents. */
+  float: left;
+  margin: 5px 0px 5px 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+.Welcome-header-newpost-link:hover {
+  background: #4691A4;
+}
+
+.ImageFeed-header {
+  /* clear:both; is needed so that ImageFeed-header does not overlap Welcome-header. */
+  clear: both;
+  background-color: #4B99AD;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.ImageFeed-title {
+  width: 15%;
+  height: 50px;
+  float: left;
+  left: 60px;
+  font: 30px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: bold;
+}
+
+.SearchBar input {
+  height: 25px;
+  width: 200px;
+  text-align: center;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.SearchBar {
+  margin-left: 25%;
+  line-height: 50px;
+  /* Following helps make the div have same width as its contents. -*/
+  float: left;
+}

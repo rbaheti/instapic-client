@@ -1,0 +1,29 @@
+.Comment {
+	margin-top: 10px;
+}
+
+.Comment-username {
+	display: inline;
+}
+
+.Comment-username-link {
+	text-decoration: none;
+}
+
+.Comment-body {
+	display: inline;
+	padding-left: 10px;
+}
+
+.Comments-add {
+	border-top: 0.5px solid grey;
+}
+
+.Comments-add input {
+	margin-top: 15px;
+	border: none;
+}
+
+.Comments-timestamp {
+	margin: 10px 0 10px 0;
+}
