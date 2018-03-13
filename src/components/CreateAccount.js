@@ -26,7 +26,7 @@ class CreateAccount extends Component {
   createUser(e) {
     e.preventDefault();
     const userToSave = {username: this.state.username, password: this.state.password};
-    axios.post('http://localhost:3030/newuser', userToSave)
+    axios.post('https://instapic-server-rashmi.herokuapp.com/newuser', userToSave)
       .then((data) => {
         localStorage.setItem('localStorage-username', this.state.username);
         this.setState({isError: false});
