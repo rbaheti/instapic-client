@@ -8,7 +8,7 @@ export const ADD_COMMENT = 'ADD_COMMENT';
 export const UPDATE_USERNAME = 'UPDATE_USERNAME';
 
 export const getPostData = () => {
-	const postDataEndpoint = 'https://fast-harbor-30014.herokuapp.com/posts';
+	const postDataEndpoint = 'https://instapic-server-rashmi.herokuapp.com/posts';
 	const postData = axios.get(postDataEndpoint);
 	return {
 		type: SET_POST_DATA,
@@ -24,7 +24,7 @@ export const setSearchText = (text) => {
 };
 
 export const addPost = (instaPost) => {
-	const addPostEndpoint = 'https://fast-harbor-30014.herokuapp.com/newpost';
+	const addPostEndpoint = 'https://instapic-server-rashmi.herokuapp.com/newpost';
 	const addPostResponse = axios.post(addPostEndpoint, instaPost);
 	return {
 		type: ADD_POST,
@@ -33,7 +33,7 @@ export const addPost = (instaPost) => {
 };
 
 export const addLikes = (postid) => {
-	const addLikeEndpoint = 'https://fast-harbor-30014.herokuapp.com/likes';
+	const addLikeEndpoint = 'https://instapic-server-rashmi.herokuapp.com/likes';
 	const addLikesResponse = axios.post(addLikeEndpoint, {"id": postid});
 	return {
 		type: ADD_LIKES,
@@ -42,7 +42,7 @@ export const addLikes = (postid) => {
 }
 
 export const addComment = (postid, commentObj) => {
-	const addCommentEndpoint = 'https://fast-harbor-30014.herokuapp.com/comment';
+	const addCommentEndpoint = 'https://instapic-server-rashmi.herokuapp.com/comment';
 	const addCommentResponse = axios.post(addCommentEndpoint, {"id": postid, "username": commentObj.username, "text": commentObj.text});
 	return {
 		type: ADD_COMMENT,
